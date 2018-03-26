@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro" rel="stylesheet">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Better Doctor Lookup</h1>
+    </div>
+    <div class="container">
+      <div class="well text-center">
+        <h3>Choose to search for a doctor by name or by your symptoms.</h3>
+        <hr>
+        <form class="form-group">
+          <div class="row">
+            <div class="col-sm-4">
+              <select class="form-control" id="search">
+                <option>Name</option>
+                <option>Symptoms</option>
+              </select>
+            </div>
+            <div class="col-sm-8">
+              <input class="form-control" type="text" id="term" placeholder="search term" required>
+            </div>
+          </div>
+          <hr>
+          <button type="submit" class="btn btn-danger btn-lg">Search</button>
+        </form>
+      </div>
+      <div class="well" id="answer">
+        <div id="error">
+        </div>
+        <div id="message">
+        </div>
+        <ul id="results">
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
